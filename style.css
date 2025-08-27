@@ -1,20 +1,121 @@
-.frame{
-  display: flex;
-  padding: 20px;
+.navbar {
+  width: 100%;
   border: 1px solid black;
+  height: 120px;
+  background-color: lightgray;
+}
+
+.navbar-container {
+  display: flex;
+  border: solid black 1px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar_logo {
+  height: 80px;
+  width: 80px;
+  background-color: gray;
+  margin: 10px 15px 10px;
+  border: solid black 1px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 1px,
+    rgba(49, 48, 48, 0.8) 6px 2px 16px 0px;
+}
+
+.nav-itmes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-item-1,
+.nav-item-2,
+.nav-item-3 {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: gray;
+  margin: 10px 15px 10px;
+  box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 1px,
+    rgba(49, 48, 48, 0.8) 6px 2px 16px 0px;
+}
+
+.nav-item-1:hover,
+.nav-item-2:hover,
+.nav-item-3:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+@media (max-width: 523px) {
+  .navbar_logo {
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    margin: 5px 5px 5px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 1px,
+      rgba(49, 48, 48, 0.8) 6px 2px 16px 0px;
+  }
+
+  .nav-itmes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .nav-item-1,
+  .nav-item-2,
+  .nav-item-3 {
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 5px 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 1px,
+      rgba(49, 48, 48, 0.8) 6px 2px 16px 0px;
+  }
+
+  .nav-item-1:hover,
+  .nav-item-2:hover,
+  .nav-item-3:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+}
+
+.frame {
+  display: flex;
+  padding: 100px;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   align-content: space-evenly;
-  gap: 10px;
+  gap: 100px;
 }
 
-
-.box{
-  height: 100px;
-  width: 100px;
-  background-color: blue;
+.box {
+  height: 300px;
+  width: 400px;
+  background-color: rgb(148, 148, 148);
   font-size: 20pt;
-  border: 1px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(35, 34, 34, 0.2) 0px 60px 40px -7px;
+  border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+  .box {
+    width: 300px;
+    height: 200px;
+    background-color: aquamarine;
+  }
 }
