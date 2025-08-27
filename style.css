@@ -2,9 +2,12 @@
   display: flex;
   padding: 20px;
   border: 1px solid black;
-  justify-content: centergit ;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  gap: 10px;
 }
 
 
