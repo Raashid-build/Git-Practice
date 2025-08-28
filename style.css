@@ -88,9 +88,63 @@
   }
 }
 
+.carousel {
+  margin: auto;
+  display: flex;
+  padding: 10px;
+}
+.carousel-item-1 {
+  width: 1800px;
+  height: 400px;
+  background-color: lightblue;
+  margin: auto;
+  border-radius: 10px;
+}
+.carousel-item-2 {
+  width: 1800px;
+  height: 400px;
+  background-color: aquamarine;
+  margin: auto;
+  border-radius: 10px;
+}
+.carousel-item-3 {
+  width: 1800px;
+  height: 400px;
+  background-color: lightcoral;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important; /* remove Bootstrap's black overlay */
+  border: none;
+  opacity: 1; /* always visible */
+}
+
+.bi-chevron-left {
+  background-color: white; /* circle background */
+  border-radius: 50%; /* perfect circle */
+  padding: 5px 15px 5px; /* space around the icon */
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bi-chevron-right {
+  background-color: white; /* circle background */
+  border-radius: 50%; /* perfect circle */
+  padding: 5px 15px 5px; /* space around the icon */
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .frame {
   display: flex;
-  padding: 100px;
+  padding: 80px;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -100,9 +154,9 @@
 }
 
 .box {
-  height: 300px;
-  width: 400px;
-  background-color: rgb(148, 148, 148);
+  width: 350px;
+  height: 225px;
+  background-color:cadetblue;
   font-size: 20pt;
   color: white;
   display: flex;
@@ -112,10 +166,3 @@
   border-radius: 10px;
 }
 
-@media (min-width: 800px) {
-  .box {
-    width: 300px;
-    height: 200px;
-    background-color: aquamarine;
-  }
-}
